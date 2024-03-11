@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Assurez-vous d'avoir un fichier style.css pour le style -->
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form action="../PHP/managercv.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submitInscription" value="S'inscrire">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

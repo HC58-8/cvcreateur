@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+    padding-right:20px  ;
+    height: 65px;
+}
+.namelogo{
+    padding-left: 60px;
+    padding-right: 40px;
+    background-color: blue;
+    border-radius: 0px 30px 0px 0px ;
+    height: 70px;
+    text-align: center;
+    
+
+}
+.namelogo h1{
+    padding-top: 15px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    
+}
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+.links ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 30px 0 30px ;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn input {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    border-radius: 150px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.container{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, #f4f5f9 50%, blue 50%);
+    height: 90vh;
+    
+}
+.container .cvcard{
+    height: 400px;
+    width: 300px;
+    border: 1px solid;
+    background-color: white ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+.cvp {
+    width: 800px;
+    
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+.cvp h1{
+    margin-bottom: 80px;
+    font-size: 3em;
+    font-weight: 600;
+}
+.cvp p{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.cvp button{
+    height: 40px;
+    width: 150px;
+    border:1px solid;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.steps {
+    text-align: center; /* Pour centrer le contenu */
+    height: 100vh;
+    background-color: #f4f5f9 ;
+}
+
+.titre {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 60px 0 40px 0;
+}
+.steps p{
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around; /* Pour aligner les étapes horizontalement */
+    padding: 70px 0 50px 0;
+}
+
+.step {
+    text-align: center; /* Pour centrer le contenu à l'intérieur de chaque étape */
+    max-width: 250px; /* Limiter la largeur de chaque étape */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.step img{
+    width: 200px;
+    height: 200px;
+    
+}
+.step p{
+    font-weight: 600;
+    font-size: 19px;
+    padding: 20px 0 20px 0;
+}
+.modeles{
+    height: 100vh;
+    background-color: #f4f5f9;
+}
+.modeles .titre{
+    text-align: center;
+}
+.modeles p{
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+    padding-bottom: 15px;
+}
+.modeles-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding-top: 20px;
+}
+.modele{
+    background-color: beige;
+    height: 400px;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.conseils{
+    height: 75vh;
+    background-color: #f4f5f9 ;
+    padding-top: 30px;
+
+        
+}
+.conseil{
+    border: 1px solid;
+    border-radius: 50px;
+    width: 750px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);}
+.conseil h3{
+    font-size: 19px;
+    font-weight: 600;
+    padding-left: 10px ;
+    padding-bottom: 20px;
+
+}
+.conseil p{
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 30px ;
+    padding-bottom: 20px;
+
+}
+.feedbacks{
+    height: 100vh;
+    background-color:#f4f5f9;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+.feedback img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+
+}
+.feedback p{
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.feetback-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.starts{
+    display: flex;
+    justify-content: center;
+}
+.star img{
+    width: 16px;
+    height: 16px;
+    background-color: blue;
+}
+footer{
+    height: 20vh;
+    background-color: #f4f5f9;
+}

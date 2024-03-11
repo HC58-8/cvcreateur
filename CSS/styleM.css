@@ -1,0 +1,10 @@
+.containerM {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, #f4f5f9 50%, blue 50%);
+    
+}
+.modeles-container{
+    background-color: #f4f5f9;
+    padding-bottom: 40px;
+}

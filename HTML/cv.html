@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Créateur</title>
+    <link rel="stylesheet" href="../CSS/cv.css">
+</head>
+<body>
+    <header>
+        <h1 id="titre">CV Créateur</h1>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="multi-step-form" action="../PHP/managercv.php" method="post" enctype="multipart/form-data">
+                    <!-- Étape 1 - Informations Personnelles -->
+                    <div class="step">
+                        <h2>Étape 1 - Informations Personnelles</h2>
+                        <div class="form-group item0">
+                            <label for="name">Nom:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group item1">
+                            <label for="surname">Prénom:</label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvImage">Importez votre image pour le CV:</label>
+                            <input type="file" id="cvImage" name="cvImage">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <button type="button" class="btn btn-primary next">Suivant</button>
+                    </div>
+
+                    <!-- Étape 2 - Expérience et Formation -->
+                    <div class="step" style="display: none;">
+                        <h2>Étape 2 - Expérience et Formation</h2>
+                        <div class="form-group">
+                            <label for="formation">Formation:</label>
+                            <textarea id="formation" name="formation"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Expérience :</label>
+                            <textarea id="experience" name="experience"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary prev">Précédent</button>
+                        <button type="button" class="btn btn-primary next">Suivant</button>
+                    </div>
+
+                    <!-- Étape 3 - Loisirs, Langues et Compétences -->
+                    <div class="step" style="display: none;">
+                        <h2>Étape 3 - Loisirs, Langues et Compétences</h2>
+                        <div class="form-group">
+                            <label for="loisirs">Loisirs:</label>
+                            <textarea id="loisirs" name="loisirs"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="langues">Langues (maîtrisées):</label>
+                            <div>
+                                <input type="checkbox" id="francais" name="langues[]" value="fr">
+                                <label for="francais">Français</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="anglais" name="langues[]" value="en">
+                                <label for="anglais">Anglais</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="arabe" name="langues[]" value="ar">
+                                <label for="arabe">Arabe</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="softSkills">Soft Skills:</label>
+                            <textarea id="softSkills" name="softSkills"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary prev">Précédent</button>
+                        <button type="submit" class="btn btn-success" name="submitCV">Créer CV</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/cv.js"></script>
+</body>
+</html>

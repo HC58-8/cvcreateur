@@ -1,0 +1,23 @@
+.cont{
+    
+    display: flex;
+    justify-content: space-around;
+  
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, #f4f5f9 50%, blue 50%);
+    height: 70vh;
+}
+.cvp {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    
+
+    
+}
+.cvp {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: 100vh;
+}
